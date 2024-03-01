@@ -62,6 +62,10 @@ android {
     }
     dynamicFeatures = [':favorite']
 
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+
 }
 
 hilt {
