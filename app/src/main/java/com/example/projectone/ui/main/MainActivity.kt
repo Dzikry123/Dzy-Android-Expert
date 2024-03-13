@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
@@ -167,7 +168,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     private fun moveToFavoriteActivity() {
-        startActivity(Intent(this, Class.forName("com.example.favorite.ui.fav.FavoriteActivity")))
+        val uri = Uri.parse("favoriteapp://navigate/favorite")
+        val intent = Intent(Intent.ACTION_VIEW, uri)
+        startActivity(intent)
     }
 
     // leak canary
