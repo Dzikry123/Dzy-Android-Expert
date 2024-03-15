@@ -27,4 +27,8 @@
             </intent-filter>
         </activity>
     </application>
+<<<<<<< HEAD
 </manifest>
+=======
+</manifest>
+>>>>>>> 5860044f6a9a84819e602e3305721bd4711805be

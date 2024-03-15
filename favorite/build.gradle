@@ -46,6 +46,10 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion '1.4.5'
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 5860044f6a9a84819e602e3305721bd4711805be
 }
 
 

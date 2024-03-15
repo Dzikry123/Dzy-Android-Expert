@@ -30,6 +30,8 @@ import com.google.android.material.navigation.NavigationView
 import com.google.android.play.core.splitinstall.SplitInstallManagerFactory
 import com.google.android.play.core.splitinstall.SplitInstallRequest
 import dagger.hilt.android.AndroidEntryPoint
+import android.net.Uri
+
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -170,7 +172,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private fun moveToFavoriteActivity() {
         val uri = Uri.parse("favoriteapp://navigate/favorite")
         val intent = Intent(Intent.ACTION_VIEW, uri)
+<<<<<<< HEAD
         startActivity(intent)
+=======
+        startActivity(intent)  
+>>>>>>> 5860044f6a9a84819e602e3305721bd4711805be
     }
 
     // leak canary
